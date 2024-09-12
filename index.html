@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品網站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #4A4A4A;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            color: #4A4A4A;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4A4A4A;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>產品展示網站</h1>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>產品項目</h2>
+            <p>這裡展示你的產品列表。</p>
+        </section>
+
+        <section id="purchase">
+            <h2>購買管道</h2>
+            <p>這裡描述如何購買產品的方式（例如：通過電子商務平台，或聯繫方式）。</p>
+        </section>
+
+        <section id="feedback">
+            <h2>顧客回饋</h2>
+            <p>這裡顯示顧客的回饋或評價。</p>
+        </section>
+
+        <section id="support">
+            <h2>顧客協助</h2>
+            <p>常見問題及解決方案可以在這裡列出。</p>
+        </section>
+
+        <section id="contact">
+            <h2>聯絡我們</h2>
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="姓名" required>
+                <input type="email" name="email" placeholder="電子郵件" required>
+                <textarea name="message" placeholder="您的訊息" required></textarea>
+                <input type="submit" value="送出">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>版權所有 © 2024</p>
+    </footer>
+</body>
+</html>
