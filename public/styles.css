@@ -1,0 +1,166 @@
+/* 全局樣式 */
+body {
+    font-family: 'Dancing Script', 'Microsoft JhengHei', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4ca2af;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* About 區塊樣式 */
+.about {
+    display: flex;
+    flex-wrap: wrap; /* 允許換行 */
+    justify-content: space-between; /* 左右對齊 */
+    align-items: flex-start; /* 垂直頂部對齊 */
+    gap: 40px; /* 增加左右間距 */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    flex: 0 0 40%; /* 固定文字區寬度為 40% */
+    max-width: 400px; /* 最大寬度 */
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content li {
+    margin: 5px 0;
+}
+
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* 圖片區樣式 */
+.about-images {
+    flex: 0 0 50%; /* 固定圖片區寬度為 55% */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 圖片兩列對齊 */
+    gap: 20px 1px; /* 圖片之間的間距 */
+}
+
+.about-images img {
+    width: 250px; /* 圖片寬度自適應 */
+    height: 250px; /* 保持圖片比例 */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+}
+
+/* 按鈕樣式 */
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.ig-btn {
+    background: linear-gradient(45deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F77737, #FCAF45, #FFDC80);
+    color: white; /* 確保文字顯示清晰 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 增加按鈕效果 */
+    cursor: pointer;
+    display: inline-block;
+}
+
+.ig-btn:hover {
+    transform: scale(1.05); /* 滑鼠懸停時放大效果 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 增加陰影效果 */
+}
+
+
+.line-btn {
+    background-color: #00B900;
+}
+
+.line-btn:hover {
+    background-color: #009700;
+}
+
+/* 響應式樣式 */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* 小螢幕垂直排列 */
+        align-items: center; /* 水平居中 */
+    }
+
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-images {
+        grid-template-columns: 1fr; /* 小螢幕改為單列圖片 */
+    }
+}
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #5ab5f2;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #5ab5f2;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#input-container {
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
